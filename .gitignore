@@ -1,0 +1,6 @@
+**/*cache*
+.idea/
+.venv
+support_material.txt
+simple_site/db.sqlite3
+
