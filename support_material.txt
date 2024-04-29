@@ -1,0 +1,14 @@
+https://www.youtube.com/watch?v=FyTL1bnUx5I&list=PLA0M1Bcd0w8xO_39zZll2u1lz_Q-Mwn1F
+https://www.youtube.com/watch?v=8PehPIwCP40  --- реализация поиска на сайте
+
+
+1. Что такое фреймворк Django
+2. Что такое интерфейс WSGI
+3. python -m django startproject simple_site
+4. Что такое миграции базы данных
+5. Для чего нужен manage.py в django
+6. Модель MTV. Маршрутизация.
+7. Функции представления в django
+8. python manage.py startapp
+9. Что такое миграции базы данных и для чего они нужны
+10.
