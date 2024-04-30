@@ -21,5 +21,5 @@ from articles.views import start_page
 
 urlpatterns = [
     path('admin/', admin.site.urls),
-    path('articles/', include('articles.urls')),
+    path('', include('articles.urls')),
 ]
