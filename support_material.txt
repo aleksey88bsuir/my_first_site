@@ -11,4 +11,5 @@ https://www.youtube.com/watch?v=8PehPIwCP40  --- реализация поиск
 7. Функции представления в django
 8. python manage.py startapp
 9. Что такое миграции базы данных и для чего они нужны
-10.
+10. Константы MEDIA_ROOT, MEDIA_URL
+11.
