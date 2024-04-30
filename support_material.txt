@@ -12,4 +12,7 @@ https://www.youtube.com/watch?v=8PehPIwCP40  --- реализация поиск
 8. python manage.py startapp
 9. Что такое миграции базы данных и для чего они нужны
 10. Константы MEDIA_ROOT, MEDIA_URL
-11.
+11. python manage.py makemigrations
+12. python manage.py sqlmigrate articles 0001
+13. python manage.py migrate
+14.
