@@ -15,4 +15,8 @@ https://www.youtube.com/watch?v=8PehPIwCP40  --- реализация поиск
 11. python manage.py makemigrations
 12. python manage.py sqlmigrate articles 0001
 13. python manage.py migrate
-14.
+14. https:// djbook.ru/rel3.0/topics/templates.html
+15. STATIC_URL = 'static/'
+16. STATIC_ROOT = os.path.join(BASE_DIR, 'media')
+17. STATICFILES_DIRS = []
+18.
