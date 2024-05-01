@@ -1,11 +1,22 @@
 from django.http import HttpResponse
 from django.shortcuts import render
-
+from .models import Article
 # Create your views here.
+
+menu = ['Главная', 'Обратная связь', 'О сайте', 'Регистрация']
 
 
 def start_page(reguest):
-    return HttpResponse('Hello world!')
+    published_articles = Article.objects.filter(is_published=True)
+
+    return render(reguest, "articles/index.html",
+                  {'menu': menu,
+                   'title': 'Главная страница',
+                   'posts': published_articles})
+
+
+def about(reguest):
+    return render(reguest, "articles/about.html", {'menu': menu, 'title': 'О сайте'})
 
 
 def display_all_articles(request):
