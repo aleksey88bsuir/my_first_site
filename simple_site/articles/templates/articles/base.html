@@ -1,21 +1,42 @@
 {% load static %}
 <!DOCTYPE html>
-<html lang="en">
+<html>
 <head>
-    <meta charset="UTF-8">
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8">
     <title>{{ title }}</title>
     <link type="text/css" href="{% static 'articles/css/styles.css' %}" rel="stylesheet"/>
+    <link rel="shortcut icon" href="{% static 'articles/images/main.ico' %}" type="image/x-icon"/>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
 </head>
 <body>
-{% block mainmenu %}
-<ul>
-    {% for m in menu %}
-    <li>{{ m }}</li>
-    {% endfor %}
-</ul>
-{% endblock mainmenu %}
+    <!-- Блок меню -->
+            {% block mainmenu %}
+            <div class="header">
+                <ul id="mainmenu" class="mainmenu">
+                    <li class="logo"><a href="#"><div class="logo"></div></a></li>
+                        {% for m in menu %}
+                            {% if not forloop.last %}
+                                <li><a href="#">{{ m.title }}</a></li>
+                            {% else %}
+                                <li class="last"><a href="#">{{ m.title }}</a></li>
+                                {% endif %}
+                            {% endfor %}
+                        </ul>
+                        <div class="clear"></div>
+            </div>
+            {% endblock mainmenu %}
+            <!-- Конец блока меню -->
+                <!-- Блок контента -->
+                <div class="content-text">
+                    {% block content %}
+                    {% endblock %}
+                </div>
+                <!-- Конец блока контента -->
+        <!-- Footer -->
+        <div id="footer">
+            <p>2024 Сайт разработан компанией R-443Y_company. Автор aleksey88bsuir</p>
+        </div>
+        <!-- Конец footer'а и страницы -->
 
-{% block content %}
-{% endblock content %}
 </body>
 </html>
