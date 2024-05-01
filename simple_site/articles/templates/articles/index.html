@@ -1,17 +1,18 @@
 {% extends 'articles/base.html' %}
 
 {% block content %}
-<h1>{{ title }}</h1>
-<p>Содержимое главной страницы</p>
 <ul class="list-articles">
     {% for post in posts %}
     <li>
+
         <div class="article-panel">
-            <p class="first">Автор: {{ post.author }}</p>
+
             {% if post.photo %}
                 <p><img class="img-article-left thumb" src="{{ post.photo.url }}"></p>
             {% endif %}
             <h2>{{post.title}}</h2>
+            <p class="first">Автор: {{ post.author }}</p>
+            <br>
             {% autoescape on %}
                 <p>{{ post.content|linebreaks|truncatewords:50 }}</p>
             {% endautoescape %}

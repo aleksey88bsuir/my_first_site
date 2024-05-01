@@ -26,11 +26,12 @@
             </div>
             {% endblock mainmenu %}
             <!-- Конец блока меню -->
-            <form action="{% url 'search' %}" method="get">
-                <input type="search" type="text" name="q" placeholder="Поиск новостей">
-                <button type="submit">Найти</button>
-
-            </form>
+            <div class="search-field">
+                <form action="{% url 'search' %}" method="get">
+                    <input type="search" type="text" name="q" placeholder="Поиск новостей">
+                    <button type="submit">Найти</button>
+                </form>
+            </div>
                 <!-- Блок контента -->
                 <div class="content-text">
                     {% block content %}

@@ -262,12 +262,28 @@ ul.content-table li a {
 ul.content-table li a:hover {color: #F0711C;}
 
 .content-text {
-	margin: 60px 0 0 30px;
+	margin: 20px 0 0 30px;
 	color: #000;
 	font-size: 20px;
 	font-family: Yandex Sans Display Light;
 }
 .content-text h1 {font-size: 32px;}
+
+.search-field {
+    margin: 10px 0 0 30px;
+    color: #000;
+    font-size: 20px;
+    font-family: Yandex Sans Display Light;
+}
+
+.search-field-under {
+    margin: 0px 0 0 0px;
+    color: #000;
+    font-size: 20px;
+    font-family: Yandex Sans Display Light;
+    width: 300px;
+}
+
 
 ul.lang-list {
 	list-style: none;
