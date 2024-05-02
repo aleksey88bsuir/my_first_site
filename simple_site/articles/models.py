@@ -12,9 +12,3 @@ class Article(models.Model):
 
     def __str__(self):
         return f'{self.author}: {self.title} (опубликовано: {self.is_published})'
-
-
-class CustomUser(AbstractUser):
-
-    def __str__(self):
-        return self.username

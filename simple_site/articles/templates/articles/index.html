@@ -1,6 +1,13 @@
 {% extends 'articles/base.html' %}
 
 {% block content %}
+<div class="search-field">
+    <form action="{% url 'search' %}" method="get">
+        <input type="search" type="text" name="q" placeholder="Поиск новостей">
+        <button type="submit">Найти</button>
+    </form>
+</div>
+
 <ul class="list-articles">
     {% for post in posts %}
     <li>

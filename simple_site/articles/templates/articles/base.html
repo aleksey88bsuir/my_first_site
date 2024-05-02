@@ -15,24 +15,19 @@
                 <ul id="mainmenu" class="mainmenu">
                     <li class="logo"><a href="{% url 'start_page' %}"><div class="logo"></div></a></li>
                         {% for m in menu %}
-                            {% if not forloop.last %}
-                                <li><a href="{% url m.url_name %}">{{ m.title }}</a></li>
-                            {% else %}
-                                <li class="last"><a href="{% url m.url_name %}">{{ m.title }}</a></li>
-                                {% endif %}
-                            {% endfor %}
-                        </ul>
+                            <li><a href="{% url m.url_name %}">{{ m.title }}</a></li>
+                        {% endfor %}
+                    {% if request.user.is_authenticated %}
+                        <li class="last">{{ user.username }} | <a href="{% url 'logout' %}">Выйти</a></li>
+                    {% else %}
+                        <li class="last"><a href="{% url 'register' %}">Регистрация</a>|<a href="{% url 'login' %}">Войти</a></li>
+                    {% endif %}
+                </ul>
                         <div class="clear"></div>
             </div>
             {% endblock mainmenu %}
             <!-- Конец блока меню -->
-            <div class="search-field">
-                <form action="{% url 'search' %}" method="get">
-                    <input type="search" type="text" name="q" placeholder="Поиск новостей">
-                    <button type="submit">Найти</button>
-                </form>
-            </div>
-                <!-- Блок контента -->
+            <!-- Блок контента -->
                 <div class="content-text">
                     {% block content %}
                     {% endblock %}
