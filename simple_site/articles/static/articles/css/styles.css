@@ -401,3 +401,15 @@ ul.lang-list li a:hover {color: #fdc073;}
     min-width: 200px;
     font-size: 16px;
 }
+
+.animated-button {
+    /* Начальный цвет фона */
+    background-color: blue;
+    /* Скорость перехода */
+    transition: background-color 0.5s ease;
+}
+
+.animated-button:hover {
+    /* Цвет фона при наведении */
+    background-color: red;
+}
