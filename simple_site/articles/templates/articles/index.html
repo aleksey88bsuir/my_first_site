@@ -1,6 +1,7 @@
 {% extends 'articles/base.html' %}
 
 {% block content %}
+<div class="content-text">
 <div class="search-field">
     <form action="{% url 'search' %}" method="get">
         <input type="search" type="text" name="q" placeholder="Поиск новостей">
@@ -29,4 +30,5 @@
     </li>
     {% endfor %}
 </ul>
+</div>
 {% endblock content %}
