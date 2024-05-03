@@ -16,19 +16,14 @@ body, html {
   width: 100%;
   height: 2.5rem; /* Высота футера */
   margin-top: auto; /* Автоматическое отступ сверху, чтобы футер всегда был внизу контейнера */
-}
-
-#footer-class {
-    margin-top: auto;
-	box-sizing: border-box;
-	background: #3F4137;
-	padding: 5px;
-	text-align: center;
-	color: #aaa;
-	font-size: 14px;
-	font-family: Verdana, Geneva, Arial, Helvetica;
-	text-align: left;
-	overflow: hidden;
+  box-sizing: border-box;
+  background: #3F4137;
+  padding: 5px;
+  text-align: center;
+  color: #aaa;
+  font-size: 14px;
+  font-family: Verdana, Geneva, Arial, Helvetica;
+  overflow: hidden;
 }
 
 .header {
@@ -49,6 +44,7 @@ ul.mainmenu li {
 	float: left;
 	margin: 18px 40px 0 30px;
 }
+
 ul.mainmenu li.logo {margin: 0;}
 ul.mainmenu li.last {float: right;}
 
@@ -56,6 +52,7 @@ ul.mainmenu li a {
 	color: #fdc073;
 	text-decoration: none;
 }
+
 ul.mainmenu li a:hover {
 	color: #FDA83D;
 }
@@ -70,7 +67,7 @@ ul.mainmenu li a:hover {
 
 
 .content-text {
-    margin: 20px 0 0 0px;
+    margin: 0px 0 0 0px;
     color: #000;
     font-size: 20px;
     font-family: Yandex Sans Display Light;
@@ -87,9 +84,9 @@ ul.mainmenu li a:hover {
 }
 
 .search-field-under {
-    margin: 0px 0 0 0px;
+    margin: 0px 0 10 0px;
     color: #000;
-    font-size: 20px;
+    font-size: 25px;
     font-family: Yandex Sans Display Light;
     width: 300px;
 }
@@ -154,6 +151,39 @@ p.link-read-post a {
 	background: #333671;
 	color: #fff;
 	text-decoration: none;
+}
+
+/* Специальные формы */
+
+.form-input {
+    width: 300px;
+    font-size: 16px;
+    padding: 10px;
+}
+
+.form-label {
+    display: inline-block;
+    min-width: 150px;
+    vertical-align: top;
+    padding: 10px;
+}
+
+.form-error ul {
+    list-style: none;
+    padding: 0;
+    color: #CC0000;
+}
+
+.form-button {
+    min-width: 200px;
+    font-size: 16px;
+    padding: 10px;
+}
+
+.form-label,
+button[type="submit"] {
+    font-size: 16px; /* Измените значение на желаемый размер шрифта */
+    margin: 10px;
 }
 
 /* Анимация */
