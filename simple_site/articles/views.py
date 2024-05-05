@@ -25,15 +25,18 @@ def start_page(request):
 
 
 def about(request):
-    return render(request, "articles/about.html", {'menu': menu, 'title': 'О сайте'})
+    return render(request, "articles/about.html",
+                  {'menu': menu, 'title': 'О сайте'})
 
 
 def contact(request):
-    return render(request, "articles/about.html", {'menu': menu, 'title': 'Контакты'})
+    return render(request, "articles/contact.html",
+                  {'menu': menu, 'title': 'Контакты'})
 
 
 def login(request, user):
-    return render(request, "articles/about.html", {'menu': menu, 'title': 'Регистрация'})
+    return render(request, "articles/about.html",
+                  {'menu': menu, 'title': 'Регистрация'})
 
 
 class LoginUser(LoginView):
