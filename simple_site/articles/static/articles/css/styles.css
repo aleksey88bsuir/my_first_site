@@ -6,7 +6,7 @@ body, html {
 
 .container {
   position: relative; /* Относительное позиционирование */
-  min-height: 140vh; /* Минимальная высота, чтобы футер всегда был виден */
+  min-height: 100vh; /* Минимальная высота, чтобы футер всегда был виден */
 }
 
 /* Стили для футера */
@@ -41,6 +41,7 @@ ul.mainmenu {
 	overflow: hidden;
 	background: #3F4137;
 }
+
 ul.mainmenu li {
 	float: left;
 	margin: 18px 40px 0 30px;
@@ -121,7 +122,7 @@ div.article-panel p.last {
 img {max-width: 600px; height: auto;}
 
 img.img-article-left {
-	max-width: 300px;
+	max-width: 500px;
 	height: auto;
 	float: left;
 	padding: 0 10px 10px 0;
