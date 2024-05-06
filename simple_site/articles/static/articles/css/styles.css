@@ -224,23 +224,18 @@ button[type="submit"] {
   height: 100px;
 }
 .move0 {
-  background-image: url(../img/1.jpg);
   transition: left 5s linear;
 }
 .move1 {
-  background-image: url(../img/2.jpg);
   transition: left 5s ease;
 }
 .move2 {
-  background-image: url(../img/3.jpg);
   transition: left 5s ease-in;
 }
 .move3 {
-  background-image: url(../img/4.jpg);
   transition: left 5s ease-out;
 }
 .move4 {
-  background-image: url(../img/5.jpg);
   transition: left 5s ease-in-out;
 }
 .img-animate {
